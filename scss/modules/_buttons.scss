@@ -1,0 +1,163 @@
+// Bootstrap Button Overwrite
+button {
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+
+.btn {
+    border: none;
+}
+
+.btn,
+.form-control {
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+    border: 1px solid $grey;
+    font-family: $roboto;
+    cursor: pointer;
+    transition: 0.4s all;
+    &:focus,
+    &:hover {
+        box-shadow: none;
+        outline: none;
+        color: inherit;
+    }
+    &-small {
+        font-size: 12px;
+        padding: 6px 14px;
+    }
+    &-view-all,
+    &-custom {
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 8px 26px;
+    }
+    &.btn-custom-large,
+    &.btn-custom-small {
+        padding: 12px 32px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: $opensans;
+        text-transform: uppercase;
+        border: 2px solid $primaryColor;
+        background-color: $primaryColor;
+        letter-spacing: 0.03em;
+        &:hover {
+            color: $primaryColor;
+            background-color: transparent;
+        }
+    }
+    &.btn-custom-small {
+        padding: 8px 20px;
+        &.ghost {
+            background-color: transparent;
+            border-color: $primaryColor;
+            color: $primaryColor;
+            &:hover {
+                background-color: $primaryColor;
+                color: #fff;
+            }
+        }
+    }
+    &.btn-primary {
+        background-color: $primaryColor;
+        color: #fff;
+        border-color: $primaryColor;
+        &:hover {
+            background-color: transparent;
+            border-color: $primaryColor;
+            color: #000;
+        }
+    }
+    &.btn-secondary {
+        background-color: $secondaryColor;
+        color: #fff;
+        border-color: $secondaryColor;
+        &:hover {
+            background-color: transparent;
+            border-color: $secondaryColor;
+            color: #000;
+        }
+    }
+}
+
+@include custom_max(1199px) {}
+
+@include custom_max(991px) {
+    .btn,
+    .form-control {
+        &-small {
+            font-size: 11px;
+        }
+        &-view-all,
+        &-custom {
+            font-size: 12px;
+        }
+        &.btn-custom-large,
+        &.btn-custom-small {
+            font-size: 12px;
+        }
+    }
+}
+
+@include custom_max(767px) {
+    .btn,
+    .form-control {
+        &.btn-custom-large,
+        &.btn-custom-small {
+            padding: 8px 20px;
+            font-size: 13px;
+        }
+    }
+}
+
+// btn editted by amir in my own way hahah
+.btn-main {
+    font-size: 14px;
+    font-weight: 500;
+    color: $blackie;
+    background-color: $whitey;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+    &:hover {
+        color: $whitey;
+    }
+}
+
+.btn-large {
+    padding: 15px 40px;
+}
+
+.btn-medium {
+    padding: 10px 25px;
+}
+
+.btn-small {
+    padding: 6px 18px;
+}
+
+.btn-radius {
+    border-radius: 30px;
+}
+
+.btn-primary {
+    background-color: $primaryColor;
+    border: 1px solid $primaryColor;
+    transition: 0.3s ease-in-out;
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.btn-secondarycolor {
+    background-color: $secondaryColor;
+    border: 1px solid $secondaryColor;
+    transition: 0.3s ease-in-out;
+    &:hover {
+        background-color: transparent;
+    }
+}

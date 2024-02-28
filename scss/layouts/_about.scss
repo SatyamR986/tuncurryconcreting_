@@ -1,0 +1,239 @@
+.about {
+    background-color: #272727;
+    padding: 80px 0;
+    // background-image: url('../images/about.png');
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    .about-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .about-content {
+            position: relative;
+            flex: 0 0 40%;
+            .title {
+                font-family: $oswald;
+                h2 {
+                    font-size: 30px;
+                    font-weight: 400;
+                    line-height: 1;
+                    color: #fff;
+                    text-transform: uppercase;
+                    letter-spacing: 0.12em;
+                    // padding-left: 15px;
+                    display: inline-block;
+                    position: relative;
+                    // &::before {
+                    //     content: '';
+                    //     position: absolute;
+                    //     top: 0;
+                    //     left: 0;
+                    //     height: 100%;
+                    //     width: 4px;
+                    //     background-color: $secondaryColor;
+                    // }
+                }
+                h3 {
+                    font-size: 32px;
+                    color: $wood;
+                    letter-spacing: 0.08em;
+                    word-spacing: 0.2em;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    line-height: 1.5;
+                }
+            }
+            .desc {
+                p {
+                    font-size: 13px;
+                    font-family: $roboto;
+                    line-height: 1.7;
+                    color: $grey;
+                    padding-top: 20px;
+                    font-weight: 300;
+                    word-spacing: 0.05em;
+                }
+            }
+            .button {
+                .about-btn {
+                    display: inline-block;
+                    font-size: 13px;
+                    font-weight: 500;
+                    font-family: $roboto;
+                    color: $whitey;
+                    padding: 10px 30px;
+                    background-color: $wood;
+                    border: 1px solid $wood;
+                    margin-top: 30px;
+                    border-radius: 30px;
+                    transition: 0.3s ease-in-out;
+                    &:hover {
+                        background-color: transparent;
+                        color: $whitey;
+                    }
+                }
+            }
+        }
+        .about-image {
+            margin-left: 60px;
+            flex: 0 0 calc(60% - 60px);
+            z-index: 99;
+            .image {
+                min-width: 450px;
+                // border: 5px solid $whitey;
+                // img {
+                //     margin-left: -30px;
+                //     margin-top: 20px;
+                // }
+                video{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@include custom_max(992px) {
+    .about {
+        padding: 60px 0;
+        .about-wrapper {
+            flex-direction: column;
+            .about-content {
+                text-align: center;
+                margin-bottom: 30px;
+                .title {
+                    h2 {
+                        font-size: 24px;
+                    }
+                    h3 {
+                        font-size: 28px;
+                    }
+                }
+                .desc {
+                    p {
+                        font-size: 14px;
+                    }
+                }
+                .button {
+                    .about-btn {
+                        font-size: 13px;
+                        padding: 10px 30px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+            .about-image {
+                margin-left: 0;
+                .image {
+                    height: 350px;
+                    width: 100%;
+                    img {
+                        margin-left: 0;
+                        margin-top: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include custom_max(768px) {
+    .about {
+        padding: 40px 0;
+        .about-wrapper {
+            .about-content {
+                text-align: center;
+                margin-bottom: 30px;
+                .title {
+                    h2 {
+                        font-size: 20px;
+                    }
+                    h3 {
+                        font-size: 22px;
+                    }
+                }
+                .desc {
+                    p {
+                        font-size: 13px;
+                    }
+                }
+                .button {
+                    .about-btn {
+                        font-size: 13px;
+                        padding: 10px 30px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+            .about-image {
+                max-width: 100%;
+                text-align: center;
+                .image {
+                    min-width: auto;
+                    height: 100%;
+                    width: 100%;
+                    video{
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include custom_max(577px) {
+    .about {
+        .about-wrapper {
+            .about-content {
+                .title {
+                    h2 {
+                        font-size: 18px;
+                    }
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include custom_max(481px) {
+    .about {
+        .about-wrapper {
+            .about-content {
+                .title {
+                    h2 {
+                        font-size: 16px;
+                    }
+                    h3 {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include custom_max(365px) {
+    .about {
+        .about-wrapper {
+            .about-image {
+                .image {
+                    height: 100%;
+                    width: 100%;
+                    // img {
+                    //     margin-left: 0;
+                    //     margin-top: 0;
+                    //     width: 100%;
+                    //     height: 100%;
+                    // }
+                }
+            }
+        }
+    }
+}

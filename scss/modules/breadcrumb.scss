@@ -1,0 +1,124 @@
+.breadcrumb {
+    background-color: transparent;
+    background-image: url('../images/breadcrumbbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+    &::before {
+        content: '';
+        width: 517px;
+        height: 185%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $dblack;
+        transform: rotate(23deg);
+        -webkit-transform: rotate(23deg);
+        transform-origin: 100% 0;
+    }
+    .breadcrumb-wrapper {
+        position: relative;
+        display: inline-block;
+        h5 {
+            font-size: 40px;
+            color: $whitey;
+            font-weight: 700;
+            padding-bottom: 20px;
+            max-width: 250px;
+            // word-break: break-all;
+        }
+        .bread-row {
+            display: flex;
+            flex-direction: row;
+            .bread-list {
+                font-size: 16px;
+                color: $whitey;
+                position: relative;
+                &::after {
+                    content: '\f105';
+                    font-family: 'fontAwesome';
+                    font-size: 12px;
+                    padding: 0 10px;
+                    // left: 50%;
+                    // transform: translateX(-50%);
+                }
+                &:last-child::after {
+                    content: none;
+                }
+                .bread-link {
+                    color: $whitey;
+                    font-size: 16px;
+                    display: inline;
+                    transition: 0.3s ease-in-out;
+                    &:hover {
+                        color: $secondaryColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include custom_max(991px) {
+    .breadcrumb {
+        &::before {
+            width: 420px;
+        }
+        .breadcrumb-wrapper {
+            padding: 0;
+            h5 {
+                font-size: 36px;
+            }
+            .bread-row {
+                .bread-list {
+                    &::after {
+                        padding: 0 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include custom_max(767px) {
+    .breadcrumb {
+        &::before {
+            width: 390px;
+            height: 210%;
+        }
+        .breadcrumb-wrapper {
+            h5 {
+                font-size: 30px;
+                padding-bottom: 10px;
+            }
+            .bread-row {
+                .bread-list {
+                    font-size: 14px;
+                    &::after {
+                        padding: 0 8px;
+                    }
+                    .bread-link {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include custom_max(576px) {
+    .breadcrumb {
+        &::before {
+            width: 280px;
+            height: 210%;
+        }
+        .breadcrumb-wrapper {
+            h5 {
+                font-size: 24px;
+            }
+        }
+    }
+}

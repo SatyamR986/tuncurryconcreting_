@@ -1,0 +1,160 @@
+.chose-us {
+    background-color: $dblack;
+    padding: 80px 0;
+    position: relative;
+    .chose-wrapper {
+        .new-header-title {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 40px;
+            .title {
+                flex: 0 0 calc(30%);
+                h6 {
+                    font-size: 12px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 0.2em;
+                    color: $whitey;
+                    margin-bottom: 20px;
+                }
+                h4 {
+                    font-size: 26px;
+                    color: $whitey;
+                    font-weight: 600;
+                    span {
+                        font-weight: 400;
+                        color: $secondaryColor;
+                    }
+                }
+            }
+            .content {
+                flex: 0 0 calc(70% - 80px);
+                margin-left: 80px;
+                p {
+                    font-size: 15px;
+                    color: $whitey;
+                }
+            }
+        }
+        .tab-pannel {
+            .tab-nav {
+                flex: 0 0 30%;
+                .nav-link {
+                    background-color: $whitey;
+                    color: $dblack;
+                    padding: 20px 20px;
+                    margin-bottom: 20px;
+                    transition: 0.3s ease-in-out;
+                    &.active {
+                        overflow: initial;
+                        background-color: $blackie;
+                        position: relative;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            right: -3%;
+                            transform: translateY(-50%);
+                            border-top: 7px solid transparent;
+                            border-left: 15px solid $blackie;
+                            border-bottom: 7px solid transparent;
+                            transition: 0.3s ease-in-out;
+                        }
+                        h4,
+                        p {
+                            color: $whitey;
+                        }
+                    }
+                    h4 {
+                        font-size: 22px;
+                        color: $blackie;
+                        font-weight: 700;
+                        margin-bottom: 5px;
+                        transition: 0.3s ease-in-out;
+                    }
+                    p {
+                        font-size: 16px;
+                        color: $blackie;
+                        transition: 0.3s ease-in-out;
+                    }
+                    &:hover {
+                        background-color: $blackie;
+                        h4,
+                        p {
+                            color: $whitey;
+                        }
+                    }
+                }
+            }
+            .tab-content {
+                flex: 0 0 70%;
+                .tab-pane {
+                    img {}
+                }
+            }
+        }
+    }
+}
+
+@include custom_max(768px) {
+    .chose-us {
+        padding: 40px 0;
+        .chose-wrapper {
+            .new-header-title {
+                flex-direction: column;
+                margin-bottom: 40px;
+                align-items: flex-start;
+                .title {
+                    margin-bottom: 20px;
+                    h6 {
+                        margin-bottom: 10px;
+                    }
+                    h4 {
+                        font-size: 24px;
+                    }
+                }
+                .content {
+                    margin-left: 10px;
+                    p {
+                        font-size: 14px;
+                        color: $whitey;
+                    }
+                }
+            }
+            .tab-pannel {
+                flex-direction: column;
+                .tab-nav {
+                    width: 100%;
+                    .nav-link {
+                        background-color: $whitey;
+                        color: $dblack;
+                        padding: 20px 20px;
+                        margin-bottom: 20px;
+                        &.active {
+                            &::before {
+                                display: none;
+                            }
+                        }
+                        h4 {
+                            font-size: 22px;
+                            color: $blackie;
+                            font-weight: 700;
+                            margin-bottom: 5px;
+                        }
+                        p {
+                            font-size: 16px;
+                            color: $blackie;
+                        }
+                    }
+                }
+                .tab-content {
+                    flex: 0 0 70%;
+                    .tab-pane {
+                        img {}
+                    }
+                }
+            }
+        }
+    }
+}

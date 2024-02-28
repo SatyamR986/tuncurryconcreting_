@@ -1,0 +1,35 @@
+.section {
+  padding: 80px 0;
+}
+
+.section-header {
+}
+
+
+.breadcrumb{
+  padding: 160px 0 80px 0;
+}
+
+
+@include custom_max(1199px) {
+  .section {
+	 padding: 60px 0;
+  }
+}
+
+@include custom_max(991px) {
+  .section {
+	 padding: 45px 0;
+  }
+}
+
+@include custom_max(767px) {
+  .section {
+	 padding: 30px 0;
+  }
+
+  
+.breadcrumb{
+  padding: 100px 0 40px 0;
+}
+}

@@ -1,0 +1,10 @@
+.page-gallery {
+    background-color: $dblack;
+    padding-bottom: 80px;
+    .gallery-wrapper {
+        flex-wrap: wrap;
+        .picture {
+            border: 2px solid $dblack;
+        }
+    }
+}
