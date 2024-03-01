@@ -6,7 +6,7 @@
                 <h4>What our customers say</h4>
             </div>
             <div class="image-deco">
-                <img src="images/header-liner.png" alt="">
+                <img src="<?php get_template_directory_uri(). '/images/header-liner.png' ?>" alt="">
             </div>
         </div>
 
@@ -15,7 +15,7 @@
                 <div class="personal-detail">
                     <div class="right-info">
                         <div class="image">
-                            <img src="images/t1.jpg" alt="">
+                            <img src="<?php get_template_directory_uri(). '/images/t1.jpg' ?>" alt="">
                         </div>
                         <div class="per-info">
                             <h5>Peter R.</h5>
@@ -23,7 +23,7 @@
                         </div>
                     </div>
                     <div class="left-info">
-                        <img src="images/tcomma.png" alt="">
+                        <img src="<?php get_template_directory_uri(). '/images/tcomma.png' ?>" alt="">
                     </div>
                    
                 </div>
@@ -36,7 +36,7 @@
                 <div class="personal-detail">
                     <div class="right-info">
                         <div class="image">
-                            <img src="images/t2.jpg" alt="">
+                            <img src="<?php get_template_directory_uri(). '/images/t2.jpg' ?>" alt="">
                         </div>
                         <div class="per-info">
                             <h5>Jennifer L.</h5>
@@ -44,7 +44,7 @@
                         </div>
                     </div>
                     <div class="left-info">
-                        <img src="images/tcomma.png" alt="">
+                        <img src="<?php get_template_directory_uri(). '/images/tcomma.png' ?>" alt="">
                     </div>
                    
                 </div>
@@ -57,7 +57,7 @@
                 <div class="personal-detail">
                     <div class="right-info">
                         <div class="image">
-                            <img src="images/t1.jpg" alt="">
+                            <img src="<?php get_template_directory_uri(). '/images/t1.jpg' ?>" alt="">
                         </div>
                         <div class="per-info">
                             <h5>Peter R.</h5>
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                     <div class="left-info">
-                        <img src="images/tcomma.png" alt="">
+                        <img src="<?php get_template_directory_uri(). '/images/tcomma.png' ?>" alt="">
                     </div>
                    
                 </div>
@@ -78,7 +78,7 @@
                 <div class="personal-detail">
                     <div class="right-info">
                         <div class="image">
-                            <img src="images/t2.jpg" alt="">
+                            <img src="<?php get_template_directory_uri(). '/images/t2.jpg' ?>" alt="">
                         </div>
                         <div class="per-info">
                             <h5>Jennifer L.</h5>
@@ -86,7 +86,7 @@
                         </div>
                     </div>
                     <div class="left-info">
-                        <img src="images/tcomma.png" alt="">
+                        <img src="<?php get_template_directory_uri(). '/images/tcomma.png' ?>" alt="">
                     </div>
                    
                 </div>

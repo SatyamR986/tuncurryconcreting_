@@ -7,13 +7,13 @@
                     <!-- <h4>What we offer</h4> -->
                 </div>
                 <div class="image-deco">
-                    <img src="images/header-liner.png" alt="">
+                    <img src="<?php get_template_directory(). '/images/header-liner.png' ?>" alt="">
                 </div>
             </div>
             <div class="service-wrapper">
                 <div class="service-block">
                     <div class="image wow bounceInDown" data-wow-delay="0.2s">
-                        <img src="images/service1.jpg" alt="">
+                        <img src="<?php get_template_directory(). '/images/service1.jpg' ?>" alt="">
                     </div>
                     <div class="content wow slideInLeft" data-wow-delay="0.2s">
                         <div class="desc">
@@ -28,7 +28,7 @@
                 </div>
                 <div class="service-block">
                     <div class="image wow bounceInDown" data-wow-delay="0.6s">
-                        <img src="images/service2.jpg" alt="">
+                        <img src="<?php get_template_directory(). '/images/service2.jpg' ?>" alt="">
                     </div>
                     <div class="content wow slideInLeft" data-wow-delay="0.6s">
                         <div class="desc">
@@ -43,7 +43,7 @@
                 </div>
                 <div class="service-block no-margin-bottom">
                     <div class="image wow bounceInDown" data-wow-delay="1s">
-                        <img src="images/service3.jpg" alt="">
+                        <img src="<?php get_template_directory_uri(). '/images/service3.jpg' ?>" alt="">
                     </div>
                     <div class="content wow slideInLeft" data-wow-delay="0.2s">
                         <div class="desc">
@@ -60,7 +60,7 @@
 
                 <div class="service-block no-margin-bottom">
                     <div class="image wow bounceInDown" data-wow-delay="0.2s">
-                        <img src="images/service4.jpg" alt="">
+                        <img src="<?php get_template_directory_uri(). '/images/service4.jpg' ?>" alt="">
                     </div>
                     <div class="content wow slideInLeft" data-wow-delay="0.2s">
                         <div class="desc">
@@ -75,7 +75,7 @@
                 </div>
                 <div class="service-block no-margin-bottom">
                     <div class="image wow bounceInDown" data-wow-delay="0.6s">
-                        <img src="images/service5.jpg" alt="">
+                        <img src="<?php get_template_directory_uri(). '/images/service5.jpg' ?>" alt="">
                     </div>
                     <div class="content wow slideInLeft" data-wow-delay="0.6s">
                         <div class="desc">
@@ -90,7 +90,7 @@
                 </div>
                 <div class="service-block no-margin-bottom">
                     <div class="image wow bounceInDown" data-wow-delay="1s">
-                        <img src="images/service6.jpg" alt="">
+                        <img src="<?php get_template_directory_uri(). '/images/service6.jpg' ?>" alt="">
                     </div>
                     <div class="content wow slideInLeft" data-wow-delay="1s">
                         <div class="desc">

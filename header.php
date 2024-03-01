@@ -125,8 +125,8 @@ GLOBAL $phone, $email, $address, $abn, $co, $owner, $map;
                 
                 <a class="navbar-brand" href="./">
                     <figure>
-                        <img src="images/logo-w.png" alt="" class="image1">
-                        <img src="images/logo-w.png" alt="" class="image2">
+                        <img src="<?php get_template_directory_uri(). '/images/logo-w.png' ?>" alt="" class="image1">
+                        <img src="<?php get_template_directory_uri(). '/images/logo-w.png' ?>" alt="" class="image2">
                     </figure>
                 </a>
             </nav>
