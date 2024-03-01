@@ -4,7 +4,7 @@
             <h1>Our <span>Projects</span></h1>
         </div>
         <div class="image-deco">
-            <img src="images/header-liner.png" alt="">
+            <img src="<?php get_template_directory_uri(). '/images/header-liner.png' ?>" alt="">
         </div>
     </div>
     
@@ -12,7 +12,7 @@
         <div class="wrap">
             <div class="block">
                 <a href="images/gallery1.jpg">
-                    <img src="images/gallery1.jpg" alt="">
+                    <img src="<?php get_template_directory_uri(). '/images/gallery1.jpg' ?>" alt="">
                 </a>
                 <div class="content">
                     <p><span class="cat-divider">House & Shed Slabs</span></p>
@@ -21,7 +21,7 @@
             </div>
             <div class="block">
                 <a href="images/gallery2.jpg">
-                    <img src="images/gallery2.jpg" alt="">
+                    <img src="<?php get_template_directory_uri(). '/images/gallery2.jpg' ?>" alt="">
                 </a>
                 <div class="content">
                     <p><span class="cat-divider">Driveways & Footpaths</span></p>
@@ -30,7 +30,7 @@
             </div>
             <div class="block">
                 <a href="images/gallery3.jpg">
-                    <img src="images/gallery3.jpg" alt="">
+                    <img src="<?php get_template_directory_uri(). '/images/gallery3.jpg' ?>" alt="">
                 </a>
                 <div class="content">
                     <p><span class="cat-divider">Pool Surrounds</span></p>
@@ -39,7 +39,7 @@
             </div>
             <div class="block">
                 <a href="images/gallery4.jpg">
-                    <img src="images/gallery4.jpg" alt="">
+                    <img src="<?php get_template_directory_uri(). '/images/gallery4.jpg' ?>" alt="">
                 </a>
                 <div class="content">
                     <p><span class="cat-divider">Decorative Concrete</span></p>
@@ -48,7 +48,7 @@
             </div>
             <div class="block">
                 <a href="images/gallery5.jpg">
-                    <img src="images/gallery5.jpg" alt="">
+                    <img src="<?php get_template_directory_uri(). '/images/gallery5.jpg' ?>" alt="">
                 </a>
                 <div class="content">
                     <p><span class="cat-divider">Resurfacing & Sealing</span></p>
@@ -57,7 +57,7 @@
             </div>
             <div class="block">
                 <a href="images/gallery6.jpg">
-                    <img src="images/gallery6.jpg" alt="">
+                    <img src="<?php get_template_directory_uri(). '/images/gallery6.jpg' ?>" alt="">
                 </a>
                 <div class="content">
                     <p><span class="cat-divider">Retaining Walls</span></p>

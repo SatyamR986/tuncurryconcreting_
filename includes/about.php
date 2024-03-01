@@ -20,7 +20,7 @@ We provide a fully qualified and insured service to cater to all jobs big and sm
             </div>
             <div class="about-image">
                 <div class="image">
-                    <img src="images/about.jpg" alt="">
+                    <img src="<?php get_template_directory_uri(). '/images/about.jpg' ?>" alt="">
                 </div>
             </div>
         </div>

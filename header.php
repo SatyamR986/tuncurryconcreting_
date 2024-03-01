@@ -72,11 +72,7 @@ GLOBAL $phone, $email, $address, $abn, $co, $owner, $map;
 
             </ul>
             <nav class="navbar navbar-expand-lg">
-                <button type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-                    aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
-                    <img src="<?php echo get_template_directory_uri().'/images/logo.png'; ?>" alt="">
-                </button>
-                <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <div class="collapse navbar-collapse text-right" id="navbarNav">
                     <!-- <ul class="navbar-nav main-nav">
                         <li class="nav-item <?php if($page== 'home'){echo 'active';} ?>">
                             <a href="./" class="nav-link">Home</a>
@@ -122,6 +118,11 @@ GLOBAL $phone, $email, $address, $abn, $co, $owner, $map;
                     </ul> -->
                     <?php bootstrap_nav('Main');?>
                 </div>
+                <button type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+                    <img src="<?php echo get_template_directory_uri().'/images/logo.png'; ?>" alt="" style="max-width: 10%;">
+                </button>
+                
                 <a class="navbar-brand" href="./">
                     <figure>
                         <img src="images/logo-w.png" alt="" class="image1">

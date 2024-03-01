@@ -5,7 +5,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="footer-block">
                         <a href="./" class="logo">
-                            <img src="images/logo-w.png" alt="">
+                            <img src="<?php get_template_directory_uri(). '/images/logo-w.png' ?>" alt="">
                         </a>
                         <div class="footer-about">
                             <p><strong><?php echo $co; ?><br></strong>
